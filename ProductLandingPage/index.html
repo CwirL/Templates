@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img
+          class="navbar-brand"
+          src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav test">
+          <li class="nav-item  pl-5 pr-5 h4">
+            <button id="navItem1" class="nav-link nav-btn" href="">
+              Features
+            </button>
+          </li>
+          <li class="nav-item pl-5 pr-5 h4">
+            <button id="navItem2" class="nav-link nav-btn" href="#vid">How It Works</button>
+          </li>
+          <li class="nav-item pl-5 pr-5 h4">
+            <button id="navItem3" class="nav-link nav-btn" >Pricing</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Seccion 1 -->
+    <div  id="first" class="container">
+      <div class="martop"></div>
+    </div>
+    <div class="container text-center">
+      <h3 class="font-weight-bold">Handcrafted, home-made masterpieces</h3>
+      <input class="inp-p" type="email" placeholder="Enter your email" />
+      <button class="btn-p">GET STARTED</button>
+    </div>
+
+    <!-- Seccion 2 -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-2">
+          <i class="fa fa-fire ic-item"></i>
+        </div>
+        <div class="col-10">
+          <h2>Premium</h2>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-2"><i class="fa fa-truck ic-item"></i></div>
+        <div class="col-10">
+          <h2>
+            Fast Shipping
+          </h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-2"><i class="fa fa-battery-full ic-item"></i></div>
+        <div class="col-10">
+          <h2>Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section id="vid" class="container container-vid mt-5 mb-5">
+      <iframe
+        id="video"
+        height="315"
+        class="vid"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <!-- Seccion 3 -->
+    <section id="pricing" class="container mt-5">
+      <div class="row text-center">
+        <div class="col-12 col-lg-4 b">
+          <div class="card border-dark">
+            <h5 class="card-header">TENOR TROMBONE</h5>
+            <div class="card-body">
+              <h5 class="card-title">&#36;600</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-p">SELECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card border-dark">
+            <h5 class="card-header">BASS TROMBONE</h5>
+            <div class="card-body">
+              <h5 class="card-title">&#36;900</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-p">SELECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card border-dark" >
+            <h5 class="card-header">VALVE TROMBONE</h5>
+            <div class="card-body">
+              <h5 class="card-title">&#36;1200</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-p">SELECT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container space"></div>
+    <footer class="container">
+      <div class="row d-flex justify-content-end"><div class="nav navbar-dark bg-dark ">
+        <div class="nav-item"><a href="#" class="nav-link">Privacy</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Terms</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Contact</a></div>
+      </div></div>
+      <div class="row d-flex justify-content-end"><p>Copyright 2016, Original Trombones</p>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

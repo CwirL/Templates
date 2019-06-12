@@ -1,0 +1,72 @@
+.brand {
+  width: 200px;
+}
+.navbar-brand {
+  width: 400px;
+  height: auto;
+}
+.inp-p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.martop {
+  height: 100px;
+}
+.btn-p {
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color: black;
+  background: yellow;
+  transition: background-color ease-in-out 0.2s;
+}
+.btn-p:hover {
+  background-color: rgb(255, 217, 0);
+}
+.ic-item {
+  color: orange;
+  font-size: 3.5rem;
+}
+.container-vid {
+  max-width: 600px;
+}
+.vid {
+  width: 100%;
+  height: 500px;
+}
+.space {
+  height: 50px;
+}
+
+.aend {
+  text-align: end;
+}
+
+@media (min-width: 960px){
+  .test {
+    position: absolute;
+    right: 0px;
+  }
+  .container-vid {
+    max-width: 900px;
+  }
+}
+.nav-btn{
+  border: none;
+  background-color: transparent;
+}
+.nav-btn:focus{
+  outline: none;
+  border-top: 5px solid yellow; 
+}
+.active{
+  border-top: 5px solid yellow; 
+}
