@@ -4,8 +4,22 @@ $theme-colors: (
   "danger": #852406
 );
 
-$container-max-widths: (
-  "sm": 640px,
-  "xl":1400px,
-);
 @import "./node_modules/bootstrap/scss/bootstrap";
+
+// Custom container
+//Location _variables.scss
+$big-container-max-widths: (
+  sm: 240px,
+  md: 720px,
+  lg: 960px,
+  xl: 1 340px
+) !default;
+
+@include _assert-ascending($big-container-max-widths, "$big-container-max-widths");
+
+@if $enable-grid-classes {
+  .big-container {
+    @include make-container(); //location _grid.scss
+    @include make-container-max-widths($big-container-max-widths);
+  }
+}
